@@ -15,22 +15,17 @@ int main(){
 
 //  *pt_a = 'z';
 
-    int v[] = {0,1,2,3};
-    int *pt_v;
-    pt_v = v;
-    printf("%d",v);
-    //*pt_v = 6;
+    int v[4] = {25,14,30,47};
 
+    int len = sizeof(v)/sizeof(v[0]);
 
-    // for (int i = 0; i < 4; i++)
-    // {
-    //     printf("");
-    // }
-    
+    for (int i = 0; i < len; i++)
+    {
+        printf("v[%d]: %d\n",i,*(v + i));    
+    }
 
-    // printf("\n%d",pt_v);
-    // pt_v = pt_v + 1;
-    // printf("\n%d",pt_v);
-
+//basicamente o v é o vetor, e o ponteiro *v aponta pra v[0], se usarmos *(v+i), mudamos para o
+//endereço no qual o ponteiro está apontando, podendo percorrer o vetor usando os indices dele 
+        
     return 0;
 }
