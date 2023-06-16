@@ -19,21 +19,48 @@ int main(){
     printf("informe o segundo valor\n");
     scanf("%d",&num2);
 
-    if(operador == 43){
-        double resultado = num1 + num2;
+    // if(operador == 43){
+    //     double resultado = num1 + num2;
+    //     printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
+    // }
+    // if(operador == 42){
+    //     double resultado = num1 * num2;
+    //     printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
+    // }
+    // if(operador == 45){
+    //     double resultado = num1 - num2;
+    //     printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
+    // }
+    // if(operador == 47){
+    //     double resultado = num1 / num2;
+    //     printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
+    // }   
+
+    double resultado;
+    switch (operador)
+    {
+    case 43:
+        resultado = num1 + num2;
         printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
-    }
-    if(operador == 42){
-        double resultado = num1 * num2;
+    break;
+    case 42:
+        resultado = num1 * num2;
         printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
-    }
-    if(operador == 45){
-        double resultado = num1 - num2;
+    break;
+    case 45:
+        resultado = num1 - num2;
         printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
-    }
-    if(operador == 47){
+    break;
+    case 47:
         double resultado = num1 / num2;
         printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
-    }    
+    break;
+    default:
+        printf("default");
+        break;
+    } 
+
+    
+
     return 0;
 }
