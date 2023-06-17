@@ -23,8 +23,6 @@ struct {
 	float preco;
 } livro5;
 
-
-
 int main(){
 
 
