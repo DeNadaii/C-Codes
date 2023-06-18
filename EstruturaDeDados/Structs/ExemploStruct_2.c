@@ -3,19 +3,18 @@
 #include <string.h>
 #include <locale.h>
 
-typedef struct
-{
+typedef struct{
     int dia;
     int mes;
     int ano;
 } Data;
 
-typedef struct
-{
+typedef struct{
     int codigo;
     char nome[200];
     Data datNasc;
 } Aluno;
+
 Aluno aluno;
 
 int main()
