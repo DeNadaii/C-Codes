@@ -14,11 +14,16 @@ void funcVoid(int a){
 funcVoidValida(void){
     printf("segunda forma void\n");
 }
-
+int funcAltera(int x){
+    x = 2;
+    return x;
+}
 int main(){
 //podemos salvar o retorno da func em uma variavel
     int resultado = funcaoSoma(5,5);
-    
+    int x = 1;
+    x = funcAltera(x);
+    printf("x: %d\n",x);
     funcVoid(5);
     funcVoidValida();
     printf("funcao soma: %d\n",resultado);
