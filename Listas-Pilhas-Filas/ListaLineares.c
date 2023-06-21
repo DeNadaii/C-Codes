@@ -97,7 +97,7 @@ bool inserirElemListOrd(LISTA* l, REGISTRO reg){
     l->A[pos] = reg;
     l->nroElem++;
 }
-
+//busca binaria so funciona em vetores ordenados
 int buscaBinaria(LISTA* l, TIPOCHAVE ch){
     int esq, dir, meio;
     esq = 0;
