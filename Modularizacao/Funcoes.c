@@ -14,7 +14,7 @@ void funcVoid(int a){
 funcVoidValida(void){
     printf("segunda forma void\n");
 }
-int funcAltera(int x){
+static int funcAltera(int x){ //func static só podem ser acessadas dentro do programa q foram criadas
     x = 2;
     return x;
 }
