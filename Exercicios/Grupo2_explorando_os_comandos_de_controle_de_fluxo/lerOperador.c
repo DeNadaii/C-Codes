@@ -10,7 +10,7 @@ int main(){
     
     int num1,num2;
     char operador;
-    char lixo;
+
 
     printf("informe o primeiro valor\n");
     scanf("%d",&num1);
@@ -56,7 +56,7 @@ int main(){
         printf("%d %c %d = %.1lf",num1,operador,num2,resultado);
     break;
     default:
-        printf("default");
+        printf("operador invalido\n");
         break;
     } 
 

@@ -1,6 +1,8 @@
 {
   "files.associations": {
     "*.py": "python",
-    "tabelaASCII.C": "cpp"
+    "tabelaASCII.C": "cpp",
+    "stdio.h": "c",
+    "random": "c"
   }
 }
