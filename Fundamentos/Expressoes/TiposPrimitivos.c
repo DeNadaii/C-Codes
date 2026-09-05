@@ -6,7 +6,7 @@ int main(){
     char car_2 = 'C';
 
     printf("tipo char tem tamanho de 2 bytes e usa a tabela ASCII\n");
-    printf("\tEm decimal: %c\n", car_1);
+    printf("\tEm decimal: %d\n", car_1);
     printf("\tEm caracter: %c\n",car_2);
     
     int inteiro = 2147483647;//-2.147.483.648 até 2.147.483.647
@@ -19,6 +19,7 @@ int main(){
     printf("tipo float tem tamanho de 4 bytes e guarda por volta de 6 casas decimais:\n");
     printf("\t%f e %f\n",RealNegativo,Real);
 
+    //long float tem o mesmo significado que double
     double DuplaPrecisao = 1.555555555555555;
     double DuplaPrecisaoNegativo = -1.555555555555555;
     printf("tipo double tem tamanho de 8 bytes e guarda por volta de 15 casas decimais:\n");
