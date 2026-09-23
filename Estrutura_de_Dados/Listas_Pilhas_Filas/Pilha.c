@@ -28,6 +28,7 @@ typedef struct No
 
 
 //Uma pilha vazia possui topo apontando para NULL
+//isso ja limpa a memoria 
 void inicializarPilha(No **topo){
     *topo = NULL;
 }
