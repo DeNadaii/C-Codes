@@ -18,6 +18,7 @@ int main()
         end_menor_numero = comeco;
         for (int i = comeco; i < vet_size; i++)
         {
+            //para virar descresvente, basta mudar esse sinal
             if (vet[i] < vet[end_menor_numero])
             {
                 end_menor_numero = i;
